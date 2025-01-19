@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4. Red to white</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin-block: 0;
+        }
+
+        body {
+            margin: 0;
+            padding: 50px 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            font-family: system-ui, sans-serif;
+
+            line-height: 1.5;
+
+        }
+
+        .flex {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-inline: auto;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+
+
+        }
+
+        h1,
+        h2 {
+            text-align: center;
+        }
+
+        .master {
+            margin-inline: auto;
+        }
+
+        .red-to-white {
+            filter: brightness(0) saturate(100%) invert(99%) sepia(5%) saturate(600%) hue-rotate(224deg) brightness(119%) contrast(100%) drop-shadow(4px 9px 4px rgb(0, 0, 0, 0.5));
+            ;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Red to White</h1>
+
+    <h2>Master (Red)</h2>
+    <img src="https://raw.githubusercontent.com/chrisnajman/t-shirts/refs/heads/main/t-shirt-red.png" alt="" width="400"
+        height="400" class="master">
+
+
+    <div class="flex">
+        <div>
+            <h2>Convert master to white</h2>
+            <img src="https://raw.githubusercontent.com/chrisnajman/t-shirts/refs/heads/main/t-shirt-white.png" alt=""
+                width="400" height="400" class="red-to-white">
+        </div>
+        <!-- <div>
+            <h2><code>Red</code></h2>
+            <img src="https://raw.githubusercontent.com/chrisnajman/t-shirts/refs/heads/main/t-shirt-white.png" alt=""
+                width="400" height="400" class="red">
+        </div>
+        <div>
+            <h2><code>Green</code></h2>
+            <img src="https://raw.githubusercontent.com/chrisnajman/t-shirts/refs/heads/main/t-shirt-white.png" alt=""
+                width="400" height="400" class="green">
+        </div>
+        <div>
+            <h2><code>Blue</code></h2>
+            <img src="https://raw.githubusercontent.com/chrisnajman/t-shirts/refs/heads/main/t-shirt-white.png" alt=""
+                width="400" height="400" class="blue">
+        </div> -->
+
+    </div>
+
+
+</body>
+
+</html>
