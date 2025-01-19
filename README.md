@@ -1,3 +1,3 @@
 # CSS Filters
 
-Mixed results - can't use.
+Inconsistent results - see git page.
