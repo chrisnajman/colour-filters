@@ -15,6 +15,11 @@ body {
     font-size: 1.25rem;
 }
 
+code span {
+    color: red;
+    font-weight: 900;
+}
+
 .flex {
     display: flex;
     flex-wrap: wrap;
@@ -28,9 +33,14 @@ img {
 }
 
 h1,
+h1 + p,
 h2,
 h3 {
     text-align: center;
+}
+
+b {
+    font-weight: 900;
 }
 
 .master {
@@ -52,7 +62,7 @@ a {
 }
 
 a[aria-current="page"] {
-    color: red;
+    color: black;
     text-transform: uppercase;
     font-weight: 600;
 }
