@@ -15,12 +15,16 @@
             margin-block: 0;
         }
 
+        .flow>*+* {
+            margin-block-start: 1em;
+        }
+
         body {
             margin: 0;
-            padding: 50px 10px;
+            padding: 3.125rem 0.625rem;
             display: flex;
             flex-direction: column;
-            gap: 30px;
+            gap: 1.875rem;
             font-family: system-ui, sans-serif;
 
             line-height: 1.5;
@@ -39,7 +43,7 @@
         .flex {
             display: flex;
             flex-wrap: wrap;
-            gap: 10px;
+            gap: 0.625rem;
             justify-content: center;
         }
 
@@ -49,7 +53,7 @@
         }
 
         h1,
-        h1+p,
+        h2+p,
         h2,
         h3 {
             text-align: center;
@@ -57,13 +61,13 @@
 
 
         header {
-            border-bottom: 1px solid black;
-            padding-block-end: 30px;
+            border-bottom: 0.0625rem solid black;
+            padding-block-end: 1.875rem;
         }
 
         footer {
-            border-top: 1px solid black;
-            padding-block-start: 30px;
+            border-top: 0.0625rem solid black;
+            padding-block-start: 1.875rem;
         }
 
         footer {
@@ -136,14 +140,13 @@
 
     <header>
         <h1>CSS Filters</h1>
-        <p><code>filter: hue-rotate(<span>[n]</span>deg) drop-shadow(0.25rem 0.5625rem 0.25rem rgb(0, 0, 0, 0.5));</code>
-        </p>
+
     </header>
 
-    <main>
+    <main class="flow">
         <h2>Unfiltered original</h2>
         <picture>
-            <source width="512" height="512" type="image/webp"
+            <source width="400" height="400" type="image/webp"
                 srcset="https://raw.githubusercontent.com/chrisnajman/t-shirts/refs/heads/main/t-shirt-red.webp">
             <img src="https://raw.githubusercontent.com/chrisnajman/t-shirts/refs/heads/main/t-shirt-red.png" alt=""
                 width="400" height="400" class="master">
@@ -152,54 +155,56 @@
 
 
         <h2>Filtered</h2>
+        <p><code>filter: hue-rotate(<span>[n]</span>deg) drop-shadow(0.25rem 0.5625rem 0.25rem rgb(0, 0, 0, 0.5));</code>
+        </p>
         <div class="flex">
             <div>
-                <h3><code>45deg</code> OLIVE</h2>
-                    <picture>
-                        <source width="400" height="400" type="image/webp"
-                            srcset="https://raw.githubusercontent.com/chrisnajman/t-shirts/refs/heads/main/t-shirt-red.webp">
-                        <img src="https://raw.githubusercontent.com/chrisnajman/t-shirts/refs/heads/main/t-shirt-red.png"
-                            alt="" width="400" height="400" class="filter_45">
-                    </picture>
+                <h3><code><span>45deg</span></code> OLIVE</h3>
+                <picture>
+                    <source width="400" height="400" type="image/webp"
+                        srcset="https://raw.githubusercontent.com/chrisnajman/t-shirts/refs/heads/main/t-shirt-red.webp">
+                    <img src="https://raw.githubusercontent.com/chrisnajman/t-shirts/refs/heads/main/t-shirt-red.png"
+                        alt="" width="400" height="400" class="filter_45">
+                </picture>
             </div>
             <div>
-                <h3><code>90deg</code> GREEN</h2>
-                    <picture>
-                        <source width="400" height="400" type="image/webp"
-                            srcset="https://raw.githubusercontent.com/chrisnajman/t-shirts/refs/heads/main/t-shirt-red.webp">
-                        <img src="https://raw.githubusercontent.com/chrisnajman/t-shirts/refs/heads/main/t-shirt-red.png"
-                            alt="" width="400" height="400" class="filter_90">
-                    </picture>
+                <h3><code><span>90deg</span></code> GREEN</h3>
+                <picture>
+                    <source width="400" height="400" type="image/webp"
+                        srcset="https://raw.githubusercontent.com/chrisnajman/t-shirts/refs/heads/main/t-shirt-red.webp">
+                    <img src="https://raw.githubusercontent.com/chrisnajman/t-shirts/refs/heads/main/t-shirt-red.png"
+                        alt="" width="400" height="400" class="filter_90">
+                </picture>
             </div>
             <div>
-                <h3><code>180deg</code> BLUE</h2>
-                    <picture>
-                        <source width="400" height="400" type="image/webp"
-                            srcset="https://raw.githubusercontent.com/chrisnajman/t-shirts/refs/heads/main/t-shirt-red.webp">
-                        <img src="https://raw.githubusercontent.com/chrisnajman/t-shirts/refs/heads/main/t-shirt-red.png"
-                            alt="" width="400" height="400" class="filter_180">
-                    </picture>
+                <h3><code><span>180deg</span></code> BLUE</h3>
+                <picture>
+                    <source width="400" height="400" type="image/webp"
+                        srcset="https://raw.githubusercontent.com/chrisnajman/t-shirts/refs/heads/main/t-shirt-red.webp">
+                    <img src="https://raw.githubusercontent.com/chrisnajman/t-shirts/refs/heads/main/t-shirt-red.png"
+                        alt="" width="400" height="400" class="filter_180">
+                </picture>
             </div>
             <div>
-                <h3><code>270deg</code> VIOLET</h2>
-                    <picture>
-                        <source width="400" height="400" type="image/webp"
-                            srcset="https://raw.githubusercontent.com/chrisnajman/t-shirts/refs/heads/main/t-shirt-red.webp">
-                        <img src="https://raw.githubusercontent.com/chrisnajman/t-shirts/refs/heads/main/t-shirt-red.png"
-                            alt="" width="400" height="400" class="filter_270">
-                    </picture>
+                <h3><code><span>270deg</span></code> VIOLET</h3>
+                <picture>
+                    <source width="400" height="400" type="image/webp"
+                        srcset="https://raw.githubusercontent.com/chrisnajman/t-shirts/refs/heads/main/t-shirt-red.webp">
+                    <img src="https://raw.githubusercontent.com/chrisnajman/t-shirts/refs/heads/main/t-shirt-red.png"
+                        alt="" width="400" height="400" class="filter_270">
+                </picture>
             </div>
             <div>
-                <h3><code>315deg</code> RED</h2>
-                    <picture>
-                        <source width="400" height="400" type="image/webp"
-                            srcset="https://raw.githubusercontent.com/chrisnajman/t-shirts/refs/heads/main/t-shirt-red.webp">
-                        <img src="https://raw.githubusercontent.com/chrisnajman/t-shirts/refs/heads/main/t-shirt-red.png"
-                            alt="" width="400" height="400" class="filter_315">
-                    </picture>
+                <h3><code><span>315deg</span></code> RED</h3>
+                <picture>
+                    <source width="400" height="400" type="image/webp"
+                        srcset="https://raw.githubusercontent.com/chrisnajman/t-shirts/refs/heads/main/t-shirt-red.webp">
+                    <img src="https://raw.githubusercontent.com/chrisnajman/t-shirts/refs/heads/main/t-shirt-red.png"
+                        alt="" width="400" height="400" class="filter_315">
+                </picture>
             </div>
             <div>
-                <h3><code>360deg</code> BRICK</h2>
+                <h3><code><span>360deg</code> BRICK</h2>
                     <picture>
                         <source width="400" height="400" type="image/webp"
                             srcset="https://raw.githubusercontent.com/chrisnajman/t-shirts/refs/heads/main/t-shirt-red.webp">
