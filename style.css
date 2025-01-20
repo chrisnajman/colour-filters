@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+    margin-block: 0;
+}
+
+.flow > * + * {
+    margin-block-start: 1em;
+}
+
+body {
+    margin: 0;
+    padding: 3.125rem 0.625rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.875rem;
+    font-family: system-ui, sans-serif;
+
+    line-height: 1.5;
+    font-size: 1.25rem;
+    min-height: 100vh;
+    min-height: 100dvh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+code span {
+    color: red;
+    font-weight: 900;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.625rem;
+    justify-content: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1,
+h2 + p,
+h2,
+h3 {
+    text-align: center;
+}
+
+header {
+    border-bottom: 0.0625rem solid black;
+    padding-block-end: 1.875rem;
+}
+
+footer {
+    border-top: 0.0625rem solid black;
+    padding-block-start: 1.875rem;
+}
+
+footer {
+    text-align: center;
+
+    & a {
+        color: blue;
+        text-decoration: none;
+
+        @media (hover: hover) {
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        &::after {
+            content: " \27F6";
+        }
+    }
+}
+
+.master {
+    margin-inline: auto;
+    filter: drop-shadow(0.25rem 0.5625rem 0.25rem rgb(0, 0, 0, 0.5));
+    display: block;
+}
+
+.filter_none {
+    filter: drop-shadow(0.25rem 0.5625rem 0.25rem rgb(0, 0, 0, 0.5));
+}
+
+.filter_0 {
+    filter: hue-rotate(0deg) drop-shadow(0.25rem 0.5625rem 0.25rem rgb(0, 0, 0, 0.5));
+}
+
+.filter_45 {
+    filter: hue-rotate(45deg) drop-shadow(0.25rem 0.5625rem 0.25rem rgb(0, 0, 0, 0.5));
+}
+
+.filter_90 {
+    filter: hue-rotate(90deg) drop-shadow(0.25rem 0.5625rem 0.25rem rgb(0, 0, 0, 0.5));
+}
+
+.filter_180 {
+    filter: hue-rotate(180deg) drop-shadow(0.25rem 0.5625rem 0.25rem rgb(0, 0, 0, 0.5));
+}
+
+.filter_270 {
+    filter: hue-rotate(270deg) drop-shadow(0.25rem 0.5625rem 0.25rem rgb(0, 0, 0, 0.5));
+}
+
+.filter_315 {
+    filter: hue-rotate(315deg) drop-shadow(0.25rem 0.5625rem 0.25rem rgb(0, 0, 0, 0.5));
+}
+
+.filter_360 {
+    filter: hue-rotate(360deg) drop-shadow(0.25rem 0.5625rem 0.25rem rgb(0, 0, 0, 0.5));
+}
